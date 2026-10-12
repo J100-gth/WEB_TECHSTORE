@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHSTORE | Tecnología para tu día a día</title>
+  <meta name="description" content="Encuentra los mejores accesorios tecnológicos al mejor precio. Envíos rápidos, compra segura y soporte 24/7." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="#inicio" class="brand" data-view="home" aria-label="TECHSTORE inicio">
+        <img src="assets/logo.svg" alt="" class="brand-logo" />
+        <span class="brand-name">TECHSTORE</span>
+      </a>
+
+      <form class="search" role="search" id="search-form">
+        <input type="search" id="search-input" name="q" placeholder="Buscar productos..." autocomplete="off" />
+        <button type="submit" aria-label="Buscar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M20 20l-3.5-3.5"></path>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="nav" id="main-nav" aria-label="Principal">
+        <a href="#inicio" data-view="home" class="is-active">Inicio</a>
+        <a href="#productos" data-view="productos">Productos</a>
+        <a href="#ofertas" data-view="ofertas">Ofertas</a>
+        <a href="#contactos" data-view="contactos">Contactos</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="account-btn" aria-label="Cuenta">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="8" r="3.4"></circle>
+            <path d="M5 19.2c1.4-3.2 4-4.8 7-4.8s5.6 1.6 7 4.8"></path>
+          </svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cart-btn" aria-label="Carrito">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="9" cy="20" r="1.4" fill="currentColor"></circle>
+            <circle cx="18" cy="20" r="1.4" fill="currentColor"></circle>
+            <path d="M3 4h2l2.2 11.2A2 2 0 0 0 9.2 17h8.4a2 2 0 0 0 2-1.6L21 8H7"></path>
+          </svg>
+          <span class="cart-count" id="cart-count" hidden>0</span>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero view is-active" id="inicio" data-page="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker">Los mejores accesorios tecnológicos</p>
+          <h1><span>Tecnología para</span><span>tu día a día</span></h1>
+          <p class="hero-lead">
+            Encuentra los mejores accesorios tecnológicos<br />
+            al mejor precio y lleva tu experiencia al siguiente nivel.
+          </p>
+          <button class="btn-cta" id="btn-comprar" data-view="productos">Comprar ahora</button>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow"></div>
+          <img src="assets/headphones.png" alt="Audífonos gamer RGB" class="hero-headphones" />
+          <span class="rgb-ring" aria-hidden="true"></span>
+        </div>
+
+        <aside class="hero-benefits">
+          <ul>
+            <li>
+              <span class="benefit-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 7h11v10H3z"></path>
+                  <path d="M14 11h4l3 3v3h-7"></path>
+                  <circle cx="7" cy="18.5" r="1.6"></circle>
+                  <circle cx="17.5" cy="18.5" r="1.6"></circle>
+                </svg>
+              </span>
+              <span>Envios rapidos</span>
+            </li>
+            <li>
+              <span class="benefit-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 3l8 3.2v6.2c0 4.6-3.2 7.8-8 9.6-4.8-1.8-8-5-8-9.6V6.2L12 3z"></path>
+                  <path d="M8.5 12.2l2.3 2.3 4.7-5"></path>
+                </svg>
+              </span>
+              <span>Compra segura</span>
+            </li>
+            <li>
+              <span class="benefit-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="8.2"></circle>
+                  <path d="M12 7.5V12l3.2 2"></path>
+                </svg>
+              </span>
+              <span>Soporte 24/7</span>
+            </li>
+          </ul>
+          <div class="dot-grid" aria-hidden="true"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page view" id="productos" data-page="productos">
+      <div class="page-wrap">
+        <div class="page-head">
+          <p class="hero-kicker">Catálogo</p>
+          <h2>Nuestros productos</h2>
+          <p>Accesorios seleccionados para potenciar tu setup.</p>
+        </div>
+        <div class="filters" id="category-filters">
+          <button class="chip is-active" data-cat="all">Todos</button>
+          <button class="chip" data-cat="audio">Audio</button>
+          <button class="chip" data-cat="perifericos">Periféricos</button>
+          <button class="chip" data-cat="smart">Smart</button>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="page view" id="ofertas" data-page="ofertas">
+      <div class="page-wrap">
+        <div class="page-head">
+          <p class="hero-kicker">Promociones</p>
+          <h2>Ofertas destacadas</h2>
+          <p>Descuentos por tiempo limitado en accesorios top.</p>
+        </div>
+        <div class="product-grid" id="offers-grid"></div>
+      </div>
+    </section>
+
+    <section class="page view" id="contactos" data-page="contactos">
+      <div class="page-wrap contact-wrap">
+        <div class="page-head">
+          <p class="hero-kicker">Estamos para ayudarte</p>
+          <h2>Contactos</h2>
+          <p>Escríbenos y te respondemos en menos de 24 horas.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" id="contact-form">
+            <label>
+              Nombre
+              <input type="text" name="name" required placeholder="Tu nombre" />
+            </label>
+            <label>
+              Correo
+              <input type="email" name="email" required placeholder="tucorreo@email.com" />
+            </label>
+            <label>
+              Mensaje
+              <textarea name="message" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+            </label>
+            <button type="submit" class="btn-cta">Enviar mensaje</button>
+          </form>
+          <div class="contact-info">
+            <article>
+              <h3>Facebook</h3>
+              <p>@techstore.oficial</p>
+            </article>
+            <article>
+              <h3>Teléfono</h3>
+              <p>+51 999 000 000</p>
+            </article>
+            <article>
+              <h3>Horario</h3>
+              <p>Soporte 24/7 · Envíos de lunes a sábado</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page view" id="nosotros" data-page="nosotros">
+      <div class="page-wrap">
+        <div class="page-head">
+          <p class="hero-kicker">Quiénes somos</p>
+          <h2>Nosotros</h2>
+          <p>TECHSTORE nace para acercar accesorios de calidad a tu día a día, con envíos rápidos y compra segura.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page view" id="faq" data-page="faq">
+      <div class="page-wrap faq-wrap">
+        <div class="page-head">
+          <p class="hero-kicker">Ayuda</p>
+          <h2>Preguntas frecuentes</h2>
+        </div>
+        <details open><summary>¿Cuánto tarda el envío?</summary><p>Envíos nacionales en 24 a 72 horas hábiles.</p></details>
+        <details><summary>¿Puedo devolver un producto?</summary><p>Sí, tienes 7 días para cambios y devoluciones si el producto está en buen estado.</p></details>
+        <details><summary>¿Los pagos son seguros?</summary><p>Trabajamos con pasarelas cifradas. Nunca almacenamos datos de tu tarjeta.</p></details>
+      </div>
+    </section>
+
+    <section class="page view" id="privacidad" data-page="privacidad">
+      <div class="page-wrap">
+        <div class="page-head">
+          <p class="hero-kicker">Legal</p>
+          <h2>Políticas de privacidad</h2>
+          <p>Usamos tus datos solo para gestionar pedidos, soporte y mejoras del servicio. No vendemos información personal a terceros.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#inicio" class="brand" data-view="home">
+        <img src="assets/logo.svg" alt="" class="brand-logo" />
+        <span class="brand-name">TECHSTORE</span>
+      </a>
+
+      <div class="footer-col">
+        <h4>Información</h4>
+        <a href="#nosotros" data-view="nosotros">Nosotros</a>
+        <a href="#faq" data-view="faq">Preguntas frecuentes</a>
+        <a href="#privacidad" data-view="privacidad">Politicas de privacidad</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+        <span class="footer-phone">+51 999 000 000</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>Siguenos</h4>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Metodos de pago</h4>
+        <div class="pay-methods" aria-label="Métodos de pago">
+          <span class="pay visa">VISA</span>
+          <span class="pay mc">MC</span>
+          <span class="pay paypal">PayPal</span>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">DERECHOS DE AUTOR RESERVADOS 2026</p>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" hidden>
+    <div class="drawer-backdrop" data-close-cart></div>
+    <div class="drawer-panel" role="dialog" aria-labelledby="cart-title">
+      <div class="drawer-head">
+        <h3 id="cart-title">Tu carrito</h3>
+        <button class="icon-btn" data-close-cart aria-label="Cerrar">✕</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-foot">
+        <p>Total: <strong id="cart-total">$0.00</strong></p>
+        <button class="btn-cta" id="checkout-btn">Finalizar compra</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="account-modal" hidden>
+    <div class="modal-backdrop" data-close-account></div>
+    <div class="modal-card" role="dialog" aria-labelledby="account-title">
+      <button class="icon-btn modal-close" data-close-account aria-label="Cerrar">✕</button>
+      <h3 id="account-title">Mi cuenta</h3>
+      <p>Inicia sesión para guardar tus pedidos. En esta demo los datos se quedan en tu navegador.</p>
+      <form id="account-form">
+        <input type="email" name="email" required placeholder="Correo electrónico" />
+        <button type="submit" class="btn-cta">Continuar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+  <script src="js/app.js?v=3"></script>
+</body>
+</html>
